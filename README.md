@@ -2,5 +2,5 @@
 
 Jogo criado durante evento da Imersão da Alura através do CodePen
 
-confira abaixo:
+confira:
 https://guilhermehvsantos.github.io/Jojo-SuperTrunfo/
