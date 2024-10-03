@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SUPA TURUNFO</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+  <div class="container">
+    <img src="https://www.pngkey.com/png/full/117-1175717_the-year-is-jojos-bizarre-adventure-stardust-crusaders.png" class="page-logo" alt="Logo do Jojo">
+    <h1 class="page-title">SUPER TRUNFO</h1>
+    <div id="placar">
+      <h3>SCORE</h3>
+      <table style="width:100%">
+        <tr>
+          <td>YOU</td>
+          <td id="ponto-jogador"></td>
+        </tr>
+        <tr>
+          <td>OPPONENT</td>
+          <td id="ponto-oponente"></td>
+        </tr>
+      </table>
+    </div>
+    <button onclick="sortearCarta()" id="btnSortear">DRAW A CARD!</button>
+    <form id="form">
+      <h2>CHOOSE AN ATTRIBUTE...</h2>
+      <div class="wrapper">
+        <div>
+          <div id="carta-jogador">
+            <img src="https://i.ibb.co/XxdXvJW/backcard.png" style=" width: inherit; height: inherit; position: absolute;">
+          </div>
+        </div>
+        <div>
+          <div id="carta-oponente" class="carta"><img src="https://i.ibb.co/XxdXvJW/backcard.png" style=" width: inherit; height: inherit; position: absolute;"></div>
+        </div>
+      </div>
+      <div id="espacobtn">
+        <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button> <button class="button-jogar" type="button" id="btnNova" onclick="novaRodada()" disabled="false">Nova Rodada</button>
+      </div>
+      <div id="resultado"></div>
+  </div>
+  </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p>Poder (PWR - Power): Força e a capacidade de causar destruição (lesão física ou dano ambiental colateral) em um determinado período de tempo.</p>
+
+    <p>Velocidade (SPD - Speed): Agilidade e os reflexos do Stand, bem como a velocidade de desempenho.</p>
+
+    <p>Alcance (RNG - Range): Comprometimento do alcance de manifestação do Stand, alcance de influência de habilidade e mobilidade espacial.</p>
+
+    <p>Vigor (STA - Stamina): Duração de tempo que o Stand pode manter ativamente sua capacidade. </p>
+
+    <p>Precisão (PRC - Precision): Precisão e o alcance de influência / efeito de suas habilidades em alvos específicos. </p>
+
+    <p>Potencial de Desenvolvimento (Dev - Development Potential): Mede as funções possíveis do Estande, a utilização de suas habilidades e poderes e a capacidade de melhorar suas capacidades gerais. Ele diminui na classificação à medida que o usuário domina seu Estande.</p>
+
+    <p>Este conteúdo provém da JoJo's Bizarre Encyclopedia (https://jojowiki.com)</p>.
+
+    <iframe src="https://www.youtube.com/embed/it4koqzOwb0?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </footer>
+</body>
+
+</html>
