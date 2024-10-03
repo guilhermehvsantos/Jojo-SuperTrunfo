@@ -461,19 +461,6 @@ var carta30 = {
     DEV: 200,
   },
 };
-var carta31 = {
-  nome: 'Jolyne Cujoh',
-  imagem:
-    'https://criticalhits.com.br/wp-content/uploads/2021/08/d0f-910x512.jpg',
-  atributos: {
-    PWR: '- - -',
-    SPD: '- - -',
-    RNG: '- - -',
-    STA: '- - -',
-    PRC: '- - -',
-    DEV: '- - -',
-  },
-};
 
 var cartas = [
   carta1,
@@ -506,7 +493,6 @@ var cartas = [
   carta28,
   carta29,
   carta30,
-  carta31,
 ];
 
 var cartaOponente;
@@ -516,12 +502,12 @@ var placar = [0, 0];
 exibirPlacar();
 
 function sortearCarta() {
-  var numeroCartaJogador = parseInt(Math.random() * 31);
+  var numeroCartaJogador = parseInt(Math.random() * cartas.length);
   cartaJogador = cartas[numeroCartaJogador];
 
-  var numeroCartaOponente = parseInt(Math.random() * 31);
+  var numeroCartaOponente = parseInt(Math.random() * cartas.length);
   while (numeroCartaJogador == numeroCartaOponente) {
-    numeroCartaOponente = parseInt(Math.random() * 31);
+    numeroCartaOponente = parseInt(Math.random() * cartas.length);
   }
   cartaOponente = cartas[numeroCartaOponente];
 
